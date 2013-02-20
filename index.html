@@ -4,18 +4,18 @@
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
   <script src="http://maps.google.com/maps/api/js?sensor=false" 
           type="text/javascript"></script>
-  <title></title>
+  <title>Off Campus Housing</title>
   <style type="text/css">
       html { height: 100% }
       body { height: 100%; margin: 0; padding: 0 }
       #map { height: 100% }
       h1 {background-color: #8e17a3;
-      	color: #e8e110;
+      	  color: #e8e110;
       	}
     </style>
 </head>
 <body onload="initialize()">
-	<h1><br><br> Tabled <br></h1>
+	<h1><br><br> Off Campus Housing <br><br></h1>
 		<form action="apartments.html">
    		 <input type="submit" value="Apartments">
 		</form>
@@ -29,17 +29,26 @@
   <script type="text/javascript">
     //Makes an array of all the lat and longs
     var locations = [
-      ['Harrisonburg',38.477752, -78.863020, 1],
-      ['Arlington', 38.903697, -77.127490, 2],
-      ['Arlington',  38.894457, -77.163960, 3],
-      ['Maryland', 39.134062, -76.857900, 4],
-      ['Herndon', 38.931479, -77.400850, 5 ]
-      
+      ['Squire Hill',38.422213, -78.877005, 1],
+      ['Copper Beech', 38.415568, -78.848838, 2],
+      ['The Greens at Chestnut Ridge',  38.418892, -78.841455, 3],
+      ['Urban Exchange', 38.447895, -78.865685, 4],
+      ['865 East', 38.423436, -78.872304, 5 ],
+      ['University Fields', 38.424464, -78.869146, 6],
+      ['The Overlook @ Stone Spring', 38.443698, -78.891104, 7],
+      ['The Commons', 38.42313, -78.872078, 8],
+      ['North 38', 38.453486, -78.839023, 9],
+      ['The Mill', 38.43382, -78.88286, 10],
+      ['Sunchase', 38.42486, -78.859672, 11],
+      ['South View', 38.416468, -78.872625, 12],
+      ['Stone Gate', 38.425693, -78.861352, 13],
+      ['Campus View', 38.417076, -78.851672, 14],
+    
     ];
 	//Creates variable map, gets content from ID map
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 15,
-      center: new google.maps.LatLng( 38.426786, -78.881530),
+      zoom: 13,
+      center: new google.maps.LatLng( 38.4347, -78.868797),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 	//Makes var marker
