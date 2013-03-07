@@ -1,10 +1,9 @@
 var persisteduls=new Object()
 var ddtreemenu=new Object()
 
-ddtreemenu.closefolder="c:xamp-portable/htdocs/Housing-Project/closed.gif" //set image path to "closed" folder image
-ddtreemenu.openfolder="c:xamp-portable/htdocs/Housing-Project/open.gif" //set image path to "open" folder image
+ddtreemenu.closefolder="closed.gif" //set image path to "closed" folder image
+ddtreemenu.openfolder="open.gif" //set image path to "open" folder image
 
-//////////No need to edit beyond here///////////////////////////
 
 ddtreemenu.createTree=function(treeid, enablepersist, persistdays){
 var ultags=document.getElementById(treeid).getElementsByTagName("ul")
@@ -131,3 +130,4 @@ target.addEventListener(tasktype, functionref, false)
 else if (target.attachEvent)
 target.attachEvent(tasktype, functionref)
 }
+
