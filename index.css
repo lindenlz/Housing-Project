@@ -24,5 +24,3 @@ display: none; /*Hide them by default. Don't delete. */
 .treeview .submenu ul li{ /*Style for LIs of ULs that are children of LIs (submenu) */
 cursor: default;
 }
-
-.tab{text-align:center}
