@@ -14,122 +14,159 @@
       	}
 		
     </style>
-	<script type="text/javascript" src="simpletreemenu.js">
-/***********************************************
-* Simple Tree Menu- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
-* This notice MUST stay intact for legal use
-* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-***********************************************/
-</script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
 <link rel="stylesheet" type="text/css" href="index.css" />
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+<script>
+  $(document).ready(function() {
+    $( "#accordion" ).accordion({
+      collapsible: true,
+      heightStyle: "content",
+      active: false    
+    });
+   $('.scroll-pane').jScrollPane();
+                    
+  });
+  </script>
 </head>
+
 <body onload="initialize()">
 	<h1><br><br> Off Campus Housing <br><br></h1>
 	
 
-<a href="javascript:ddtreemenu.flatten('treemenu1', 'expand')">Expand All</a> | <a href="javascript:ddtreemenu.flatten('treemenu1', 'contact')">Contract All</a>
-<h4>Apartments</h4>
-<ul id="treemenu1" class="treeview">
 
-<li>Squire Hill
-	<ul>
-	<li>1443 Devon Lane, Harrisonburg, VA 22801</li>
-	<li>877-445-7067</li>
-	<li><a href="http://www.weinsteinproperties.com/properties/find-an-apt/Harrisonburg/Squire-Hill-Harrisonburg">Visit Website</a></li>
-	</ul>
-</li>
+<h2>Apartments</h2>
+	<div id="accordion">
+	
+	<h3>Squire Hill</h3>
+	<div>
+		<ul>
+			<li>1443 Devon Lane, Harrisonburg, VA 22801</li>
+			<li>877-445-7067</li>
+			<li><a href="http://www.weinsteinproperties.com/properties/find-an-apt/Harrisonburg/Squire-Hill-Harrisonburg">Visit Website</a></li>
+		
+		</ul>
+		</div>
 
-<li>Copper Beach
-	<ul>
-	<li>410 Copper Beach Circle, Harrisonburg, VA 22801</li>
-	<li>540-438-0401</li>
-	<li><a href="http://www.copperbeechjmu.com/">Visit Website</a></li>
-	</ul>
-</li>
-<li>The Greens at Chestnut Ridge
-	<ul>
-	<li>128 Chestnut Dr., Harrisonburg VA 22801</li>
-	<li>540-564-0011</li>
-	</ul>
-</li>
-<li>Urban Exchange
-	<ul>
-	<li>238 E. Water Street, Harrisonburg, VA 22801</li>
-	<li>540-434-5150 ext 131</li>
-	<li><a href="http://www.liveue.com/">Visit Website</a></li>
-	</ul>
-</li>
-<li>865 East
-	<ul>
-	<li>865 Port Republic Road, Harrisonburg, VA 22801</li>
-	<li>540-442-8885</li>
-	<li><a href="https://865east.com/">Visit Website</a></li>
-	</ul>
-</li>
-<li>University Fields
-	<ul>
-	<li>1191 Devon Lane, Harrisonburg, VA 22801</li>
-	<li>540-432-1001</li>
-	<li><a href="http://www.universityfields.com/">Visit Website</a></li>
-	</ul>
-</li>
-<li>The Overlook @ Stone Spring
-	<ul>
-	<li>607 John Tyler Circle, Harrisonburg, VA 22801</li>
-	<li>800-368-0798</li>
-	<li><a href="http://www.overlookatstonespring.com/">Visit Website</a></li>
-	</ul>
-</li>
-<li>The Commons
-	<ul>
-	<li>869 B Port Republic Road, Harrisonburg, VA 22801</li>
-	<li>540-438-3835</li>
-	<li><a href="https://lams.studenthousing.com/apply30/onlineApp/application.aspx?ID=549&theme=5">Visit Website</a></li>
-	</ul>
-</li>
-<li>North 38
-	<ul>
-	<li>1190 Meridian Circle, Harrisonburg, VA 22802</li>
-	<li>888-417-4374</li>
-	<li><a href="http://www.north38apts.com/">Visit Website</a></li>
-	</ul>
-</li>
-<li>The Mill
-	<ul>
-	<li>11A South Avenue, Harrisonburg, VA 22801</li>
-	<li>540-438-3322</li>
-	<li><a href="http://www.themillapts.com/">Visit Website</a></li>
-	</ul>
-</li>
-<li>Stonegate
-	<ul>
-	<li>1820 Putter Court, Harrisonburg, VA 22801</li>
-	<li>540-442-4496</li>
-	<li><a href="http://stonegatehousing.com/">Visit Website</a></li>
-	</ul>
-</li>
-<li>South View
-	<ul>
-	<li>1070 Lois Lane, Harrisonburg, VA 22801</li>
-	<li>540-432-0600</li>
-	<li><a href="http://southviewjm.com/">Visit Website</a></li>
-	</ul>
-</li>
-<li>Sunchase
-	<ul>
-	<li>1941 Sunchase Drive, Harrisonburg, VA 22801</li>
-	<li>877-592-7019</li>
-	<li><a href="http://www.sunchase.net/">Visit Website</a></li>
-	</ul>
-</li>
-<li>Campus View
-	<ul>
-	<li>520 Davis Mills Dr., Harrisonburg, VA 22801</li>
-	<li>540-434-5150 ext 214</li>
-	<li><a href="http://cvajmu.com/">Visit Website</a></li>
-	</ul>
-</li>
-</ul>
+<h3>Copper Beach</h3>
+	<div>
+		<ul>
+			<li>410 Copper Beach Circle, Harrisonburg, VA 22801</li>
+			<li>540-438-0401</li>
+			<li><a href="http://www.copperbeechjmu.com/">Visit Website</a></li>
+		</ul>
+	</div>
+
+<h3>The Greens at Chestnut Ridge</h3>
+	<div>
+		<ul>
+			<li>128 Chestnut Dr., Harrisonburg VA 22801</li>
+			<li>540-564-0011</li>
+		</ul>
+	</div>
+
+<h3>Urban Exchange</h3>
+	<div>
+		<ul>
+			<li>238 E. Water Street, Harrisonburg, VA 22801</li>
+			<li>540-434-5150 ext 131</li>
+			<li><a href="http://www.liveue.com/">Visit Website</a></li>
+		</ul>
+	</div>
+
+<h3>865 East</h3>
+	<div>
+		<ul>
+			<li>865 Port Republic Road, Harrisonburg, VA 22801</li>
+			<li>540-442-8885</li>
+			<li><a href="https://865east.com/">Visit Website</a></li>
+		</ul>
+	</div>
+
+<h3>University Fields</h3>
+	<div>
+		<ul>
+			<li>1191 Devon Lane, Harrisonburg, VA 22801</li>
+			<li>540-432-1001</li>
+			<li><a href="http://www.universityfields.com/">Visit Website</a></li>
+		</ul>
+	</div>
+
+<h3>The Overlook @ Stone Spring</h3>
+	<div>
+		<ul>
+			<li>607 John Tyler Circle, Harrisonburg, VA 22801</li>
+			<li>800-368-0798</li>
+			<li><a href="http://www.overlookatstonespring.com/">Visit Website</a></li>
+		</ul>
+	</div>
+
+<h3>The Commons</h3>
+	<div>
+		<ul>
+			<li>869 B Port Republic Road, Harrisonburg, VA 22801</li>
+			<li>540-438-3835</li>
+			<li><a href="https://lams.studenthousing.com/apply30/onlineApp/application.aspx?ID=549&theme=5">Visit Website</a></li>
+		</ul>
+	</div>
+
+<h3>North 38</h3>
+	<div>
+		<ul>
+			<li>1190 Meridian Circle, Harrisonburg, VA 22802</li>
+			<li>888-417-4374</li>
+			<li><a href="http://www.north38apts.com/">Visit Website</a></li>
+		</ul>
+	</div>
+
+<h3>The Mill</h3>
+	<div>
+		<ul>
+			<li>11A South Avenue, Harrisonburg, VA 22801</li>
+			<li>540-438-3322</li>
+			<li><a href="http://www.themillapts.com/">Visit Website</a></li>
+		</ul>
+	</div>
+
+<h3>Stonegate</h3>
+	<div>
+		<ul>
+			<li>1820 Putter Court, Harrisonburg, VA 22801</li>
+			<li>540-442-4496</li>
+			<li><a href="http://stonegatehousing.com/">Visit Website</a></li>
+		</ul>
+	</div>
+
+<h3>South View</h3>
+	<div>
+		<ul>
+			<li>1070 Lois Lane, Harrisonburg, VA 22801</li>
+			<li>540-432-0600</li>
+			<li><a href="http://southviewjm.com/">Visit Website</a></li>
+		</ul>
+	</div>
+
+<h3>Sunchase</h3>
+	<div>
+		<ul>
+			<li>1941 Sunchase Drive, Harrisonburg, VA 22801</li>
+			<li>877-592-7019</li>
+			<li><a href="http://www.sunchase.net/">Visit Website</a></li>
+		</ul>
+	</div>
+
+<h3>Campus View</h3>
+	<div>
+		<ul>
+			<li>520 Davis Mills Dr., Harrisonburg, VA 22801</li>
+			<li>540-434-5150 ext 214</li>
+			<li><a href="http://cvajmu.com/">Visit Website</a></li>
+		</ul>
+	</div>
+
+</div>
+<br>
 
 <!--Makes a div for the map-->
   <div id="map" ></div>
@@ -167,18 +204,18 @@
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map
       });
-
+google.maps.event.trigger(map, "resize");
     
     }
   </script>
+  <br>
+  <br>
+  <br>
+  <br>
  <!--Map here-->
- Map goes here
- <script type="text/javascript">
 
-//ddtreemenu.createTree(treeid, enablepersist, opt_persist_in_days (default is 1))
 
-ddtreemenu.createTree("treemenu1", true)
-ddtreemenu.createTree("treemenu2", false)
+
 
 </script>
 </body>
