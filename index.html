@@ -14,7 +14,11 @@
       	}
       #mapCanvas {
   	border:  1px dashed #777;
+<<<<<<< HEAD
   	width:  700px;
+=======
+  	width:  500px;
+>>>>>>> f4b25ae4c53de462532a7aa7b07ba9242c1278af
   	height:  350px;
   	margin:  0 auto;
 		
@@ -44,6 +48,7 @@ var  map=null,
       ['Campus View', 38.417076, -78.851672, 14],
     
     ];
+<<<<<<< HEAD
     
 function initializeMap() {
 	var myOptions = {
@@ -52,6 +57,14 @@ function initializeMap() {
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
 
+=======
+function initializeMap() {
+	var myOptions = {
+		zoom: 8,
+		center: latlng,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+>>>>>>> f4b25ae4c53de462532a7aa7b07ba9242c1278af
 	return new google.maps.Map($('#mapCanvas')[0], myOptions);	
 }
 
@@ -64,6 +77,7 @@ $(document).ready(function() {
       activate: function( e, ui ) {
       	if ( ui.newPanel.attr('id') == 'map' && !map ) {
 			map = initializeMap();
+<<<<<<< HEAD
 		 var marker, i;
 		 for (i = 0; i < locations.length; i++) {  
       		marker = new google.maps.Marker({
@@ -73,6 +87,10 @@ $(document).ready(function() {
    		 }
 			 
 		}
+=======
+			 
+			}
+>>>>>>> f4b25ae4c53de462532a7aa7b07ba9242c1278af
       }
       
     });
