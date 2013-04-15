@@ -6,6 +6,9 @@
 
 html { height: 100% }
       
-body { height: 100%; margin: 0; padding: 0 }
+body { height: 100%; margin: 0; padding: 0;
+
+		background-color: #694489;
+}
 
 #banner {height: 30% ; width: 100% }
