@@ -12,3 +12,5 @@ body { height: 100%; margin: 0; padding: 0;
 }
 
 #banner {height: 30% ; width: 100% }
+
+#pic {float: right;}
