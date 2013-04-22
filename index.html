@@ -78,7 +78,7 @@ function initializeMap() {
 $(document).ready(function() {
 	$('.scroll-pane').jScrollPane();
 	$( '#tabs' ).tabs();
-	$( "#accordion" ).accordion({
+	$( ".accordion" ).accordion({
       collapsible: true,
       heightStyle: "content",
       active: false,
@@ -110,7 +110,7 @@ $(document).ready(function() {
     <li><a href="#tabs-3">Map</a></li>
  </ul>
  <div id="tabs-1">
-	<div id="accordion">
+	<div class="accordion">
 	
 	<h3>Squire Hill</h3>
 	<div id="squire">
@@ -259,6 +259,21 @@ $(document).ready(function() {
 	
 	</div>
 </div>
+</div>
+<div id="tabs-2">
+    <div class="accordion">
+        <h3>Test</h3>
+        <div id="test">
+            <ul>
+                <li> Dis a test yo</li>
+            </ul>   
+        </div>
+    <h3>Test 2</h3>
+    <div id=test2>
+        <ul>
+            <li>Code</li>
+        </ul>
+    </div>
 </div>
 <div id="tabs-3">
 	<div id="map">
