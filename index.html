@@ -30,19 +30,23 @@
   	width:  350px;
   	height:  350px;
   	margin:  0 auto;
+  	float: left;
 		}
     </style>
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
 <link rel="stylesheet" type="text/css" href="css/index.css" />
  <link rel="stylesheet" href="css/jquery_css.css" />
- <link href="css/rateit.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/markermanager.js"></script>
+<script type="text/javascript" src="js/StyledMarker.js"></script>
+<script type="text/javascript" src="js/jquery.metadata.js"></script>
+<script type="text/javascript" src="js/jquery.jmapping.js"></script>
  <script src="js/jquery.jscrollpane.min.js"></script>
   
 <script>
 var  map=null,
 	latlng = new google.maps.LatLng(38.4347, -78.868797);
-	locations = [
+	apartments = [
       ['Squire Hill',38.422213, -78.877005, 1],
       ['Copper Beech', 38.415568, -78.848838, 2],
       ['The Greens at Chestnut Ridge',  38.418892, -78.841455, 3],
@@ -70,8 +74,10 @@ function initializeMap() {
 	return new google.maps.Map($('#mapCanvas')[0], myOptions);	
 }
 
+
 $(document).ready(function() {
 	$('.scroll-pane').jScrollPane();
+	$( '#tabs' ).tabs();
 	$( "#accordion" ).accordion({
       collapsible: true,
       heightStyle: "content",
@@ -80,9 +86,9 @@ $(document).ready(function() {
       	if ( ui.newPanel.attr('id') == 'map' && !map ) {
 			map = initializeMap();
 		 var marker, i;
-		 for (i = 0; i < locations.length; i++) {  
+		 for (i = 0; i < apartments.length; i++) {  
       		marker = new google.maps.Marker({
-        	position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        	position: new google.maps.LatLng(apartments[i][1], apartments[i][2]),
        	    map: map
     	  });
    		 }
@@ -97,9 +103,13 @@ $(document).ready(function() {
 
 <body>
 	<img id="banner" src="img/banner.jpg" alt="" />
-	
-
-
+	<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Apartments</a></li>
+    <li><a href="#tabs-2">Houses</a></li>
+    <li><a href="#tabs-3">Map</a></li>
+ </ul>
+ <div id="tabs-1">
 	<div id="accordion">
 	
 	<h3>Squire Hill</h3>
@@ -241,17 +251,22 @@ $(document).ready(function() {
 	</div>
 
 
+
 <h3>Map</h3>
 	<div id="map">
+	
 		<div id="mapCanvas"></div>
 	
 	</div>
-
-	
-
-
-
-
+</div>
+</div>
+<div id="tabs-3">
+	<div id="map">
+		<div id="apartment_map">
+			<div class="map-location" data-jmapping="{id: 1, point: {lat:38.422213, lng: -78.877005}, category:'Squire Hill'}">
+			
+		</div>
+	</div>
 </div>
 
 </body>
