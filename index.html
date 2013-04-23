@@ -57,6 +57,11 @@ var  map=null,
       ['South View', 38.416468, -78.872625, 12],
       ['Stone Gate', 38.425693, -78.861352, 13],
       ['Campus View', 38.417076, -78.851672, 14],
+      ['Liberty' , 38.444959, -78.871833, 15],
+      ['Cullison', 38.401819, -78.848503, 16],
+      ['West Market', 38.452677, -78.889553, 17],
+      ['Campbell', 38.445278, -78.868555, 18],
+    
     
     ];
     
@@ -92,19 +97,7 @@ $(document).ready(function() {
       collapsible: true,
       heightStyle: "content",
       active: false,
-      activate: function( e, ui ) {
-      	if ( ui.newPanel.attr('id') == 'map' && !map ) {
-			map = initializeMap();
-		 var marker, i;
-		 for (i = 0; i < apartments.length; i++) {  
-      		marker = new google.maps.Marker({
-        	position: new google.maps.LatLng(apartments[i][1], apartments[i][2]),
-       	    map: map
-    	  });
-   		 }
-			 
-		}
-      }
+     
       
     });
 });
@@ -262,28 +255,82 @@ $(document).ready(function() {
 
 
 </div>
+</div>
+
+
+<div id="tabs-2">
+    <div class="accordion">
+        <h3>Aspen Heights</h3>
+        <div id="aspen">
+		<ul>
+			<li>2100 Aspen Heights Lane, Harrisonburg, VA 22801</li>
+			<li>888-606-6924</li>
+			<li><a href="http://myaspenheights.com/">Visit Website</a></li>
+			<img id="pic" src="img/aspen.jpg" alt="" />
+		</ul> 
         </div>
-        <div id="tabs-2">
-            <div class="accordion">
-                <h3>Test</h3>
-                <div id="test">
-                    <ul>
-                        <li> Dis a test yo</li>
-                    </ul>   
-                </div>
-                <h3>Test 2</h3>
-                <div id=test2>
-                    <ul>
-                        <li>Code</li>
-                    </ul>
-                </div>
-            </div>
+		<h3>303 S. Liberty St.</h3>
+        <div id="303">
+		<ul>
+			<li>303 South Liberty Street, Harrisonburg, VA 22801</li>
+			<li>540-433-2456</li>
+			<li><a href="https://offcampushousing.jmu.edu/property/view/listingid/119964">Visit Website</a></li>
+		</ul> 
         </div>
-        <div id="tabs-3">
+		<h3>3014 Cullison Court</h3>
+        <div id="3014">
+		<ul>
+			<li>3014 Cullison Court, Harrisonburg, VA 22801</li>
+			<li>540-434-6221</li>
+			<li><a href="https://offcampushousing.jmu.edu/property/view/listingid/117283">Visit Website</a></li>
+		</ul> 
+        </div>
+		<h3>423 West Market St.</h3>
+        <div id="423">
+		<ul>
+			<li>423 West Market Street, Harrisonburg, VA 22802</li>
+			<li>540-564-2659</li>
+			<li><a href="http://www.castleproperty.com/">Visit Website</a></li>
+		<img id="pic" src="img/423.jpg" alt="" />
+		</ul> 
+        </div>
+		<h3>433 West Market St.</h3>
+        <div id="433">
+		<ul>
+			<li>433 West Market Street, Harrisonburg, VA 22802</li>
+			<li>540-564-2659</li>
+			<li><a href="http://www.castleproperty.com/">Visit Website</a></li>
+		<img id="pic" src="img/433.jpg" alt="" />
+		</ul> 
+        </div>
+		<h3>107 Campbell St.</h3>
+        <div id="campbell">
+		<ul>
+			<li>107 Campbell St., Harrisonburg, VA 22802</li>
+			<li>540-564-2659</li>
+			<li><a href="http://www.castleproperty.com/">Visit Website</a></li>
+		<img id="pic" src="img/campbell.jpg" alt="" />
+		</ul> 
+        </div>
+		<h3>85 B North High St.</h3>
+        <div id="85B">
+		<ul>
+			<li>85 B North High Street, Harrisonburg, VA 22802</li>
+			<li>540-564-2659</li>
+			<li><a href="http://www.castleproperty.com/">Visit Website</a></li>
+		<img id="pic" src="img/85B.jpg" alt="" />
+		</ul> 
+        </div>
+</div>
+
+      
+    </div>
+ <div id="tabs-3">
 	        <div id="mapTab">
 		        <div id="mapCanvas"></div>
 			</div>
 	    </div>
-    </div>
+</div>
+
 </body>
 </html>
